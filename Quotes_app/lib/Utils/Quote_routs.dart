@@ -7,7 +7,7 @@ List<Map> allQuoteData = [
     "quote":
     "Damien Hirst is the Elvis of the English art world, its ayatollah, deliverer, and big-thinking entrepreneurial potty-mouthed prophet and front man. Hirst synthesizes punk, Pop Art, Jeff Koons, Marcel Duchamp, Francis Bacon, and Catholicism.",
     "author": "Jerry Saltz",
-    "category": "art"
+    "category": "art",
   },
   {
     "quote":
@@ -303,7 +303,63 @@ List<Map> allQuoteData = [
   },
 ];
 
+List<Map> allEducation = [
+  {
+    "quote": "Maybe it's a tired tale, but without an education, you're not going to go anywhere.",
+    "author": "H. G. Bissinger",
+    "category": "education"
+  },
+  {
+    "quote":
+    "My mom grew up in poverty in Oklahoma - like Dust Bowl, nine people in one room kind of place - and the way she got out of poverty was through education. My dad grew up without a dad, with very little and he also made his way out through education.",
+    "author": "Jennifer Garner",
+    "category": "education"
+  },
+  {
+    "quote":
+    "The belief that all genuine education comes about through experience does not mean that all experiences are genuinely or equally educative.",
+    "author": "John Dewey",
+    "category": "education"
+  },
+  {
+    "quote":
+    "My background was computer science and business school, so eventually I worked my way up where I was running product groups - development, testing, marketing, user education.",
+    "author": "Melinda Gates",
+    "category": "education"
+  },
+  {"quote": "I learned more stuff in church than I did in the world.", "author": "Al Green", "category": "education"},
+  {
+    "quote":
+    "I pledge to you today that as president, in my first budget, I will introduce the largest increase in special education ever.",
+    "author": "Al Gore",
+    "category": "education"
+  },
+  {
+    "quote": "Reformation, like education, is a journey, not a destination.",
+    "author": "Mary Harris Jones",
+    "category": "education"
+  },
+  {
+    "quote":
+    "Access to books and the encouragement of the habit of reading: these two things are the first and most necessary steps in education and librarians, teachers and parents all over the country know it. It is our children's right and it is also our best hope and their best hope for the future.",
+    "author": "Michael Morpurgo",
+    "category": "education"
+  },
+  {"quote": "Sex education has to do with what's in people's head.", "author": "Donna Shalala", "category": "education"},
+  {
+    "quote": "The dream doesn't lie in victimization or blame it lies in hard work, determination and a good education.",
+    "author": "Alphonso Jackson",
+    "category": "education"
+  },
+];
+
 List<Quote> allQuotes = allQuoteData
+    .map(
+      (e) => Quote.fromMap(data: e),
+)
+    .toList();
+
+List<Quote> alleducation = allEducation
     .map(
       (e) => Quote.fromMap(data: e),
 )
